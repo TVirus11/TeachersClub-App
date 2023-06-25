@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 public class OnBoardingActivity extends AppCompatActivity {
 
@@ -43,5 +44,10 @@ public class OnBoardingActivity extends AppCompatActivity {
             startActivity(new Intent(OnBoardingActivity.this, RegisterActivity.class));
             finish();
         }
+    }
+
+    public void onSkipClick(View view) {
+        startActivity(new Intent(OnBoardingActivity.this, RegisterActivity.class));
+        finish();
     }
 }
