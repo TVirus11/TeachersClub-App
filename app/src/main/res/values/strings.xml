@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Teachers Club</string>
+    <string name="developed_in_india_with">Developed in India with ❤️</string>
+    <string name="splash_screen_logo">Splash Screen Logo</string>
+    <string name="floating_button_for_next">Floating Button for Next</string>
+    <string name="onboardback">onboardBack</string>
+    <string name="get_started">Get Started</string>
+</resources>
