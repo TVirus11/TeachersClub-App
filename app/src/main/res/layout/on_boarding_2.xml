@@ -3,15 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/green">
 
     <ImageView
-        android:id="@+id/on_board_logo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:id="@+id/on_board_logo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:elevation="3dp"
-        android:src="@mipmap/logo"
-        app:layout_constraintBottom_toTopOf="@id/bg_line"
+        android:src="@drawable/on_board_2_img"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,15 +27,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/on_board_2_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/finding_best_tuition_teachers_at_your_finger_tip"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bg_line" />
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/on_board_2_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:onClick="onNextButtonClick"
         android:layout_marginBottom="16dp"
         android:backgroundTint="@color/blue"
         android:contentDescription="@string/floating_button_for_next"
+        android:onClick="onNextButtonClick"
         android:src="@drawable/next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

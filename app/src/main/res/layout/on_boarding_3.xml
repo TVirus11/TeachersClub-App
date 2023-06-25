@@ -3,15 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/green">
 
     <ImageView
-        android:id="@+id/on_board_logo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:id="@+id/on_board_logo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:elevation="3dp"
-        android:src="@mipmap/logo"
-        app:layout_constraintBottom_toTopOf="@id/bg_line"
+        android:src="@drawable/on_board_3_img"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,8 +24,23 @@
         android:src="@drawable/on_board_back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <TextView
+        android:id="@+id/on_board_3_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/finding_best_tuition_teachers_at_your_finger_tip"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bg_line" />
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/on_board_3_next"
