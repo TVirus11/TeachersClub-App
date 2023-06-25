@@ -6,6 +6,16 @@
     android:background="@color/white">
 
     <ImageView
+        android:id="@+id/on_board_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:src="@drawable/on_board_1_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
         android:id="@+id/bg_line"
         android:layout_width="match_parent"
         android:layout_height="200dp"
@@ -16,6 +26,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/on_board_1_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/finding_best_tuition_teachers_at_your_finger_tip"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bg_line" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/on_board_1_next"
