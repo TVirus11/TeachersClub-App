@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class RegisterActivity extends AppCompatActivity {
 
     TextView regText, alreadyReg;
-    ImageView bgRegLine;
+    ImageView bgRegLine, exitMain;
     Button regButton;
 
     @Override
@@ -24,8 +24,21 @@ public class RegisterActivity extends AppCompatActivity {
         alreadyReg = findViewById(R.id.already_reg);
         bgRegLine = findViewById(R.id.bg_line_reg);
         regButton = findViewById(R.id.signUp_btn);
+        exitMain = findViewById(R.id.exit_main);
+
+        exitMain.setOnClickListener(v -> {
+            Intent mainIntent = new Intent(RegisterActivity.this, MainActivity.class);
+            startActivity(mainIntent);
+            finish();
+        });
 
         regButton.setOnClickListener(v -> {
+            Intent mainIntent = new Intent(RegisterActivity.this, MainActivity.class);
+            startActivity(mainIntent);
+            finish();
+        });
+
+        alreadyReg.setOnClickListener(v -> {
             Intent loginIntent = new Intent(RegisterActivity.this, LoginActivity.class);
             startActivity(loginIntent);
             finish();

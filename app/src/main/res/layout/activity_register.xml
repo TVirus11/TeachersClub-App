@@ -11,8 +11,8 @@
         android:id="@+id/bg_line_reg"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:elevation="5dp"
-        android:src="@drawable/on_board_back"
+        android:elevation="3dp"
+        android:src="@drawable/on_board_back2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,6 +31,35 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/exit_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="3dp"
+        android:src="@drawable/exit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/consentCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/MyCheckBox"
+        app:layout_constraintBottom_toTopOf="@id/signUp_btn"
+        app:layout_constraintStart_toStartOf="@id/signUp_btn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/i_agree_to_the_terms_conditions"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@id/consentCheck"
+        app:layout_constraintEnd_toEndOf="@id/signUp_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/consentCheck" />
 
     <Button
         android:id="@+id/signUp_btn"
