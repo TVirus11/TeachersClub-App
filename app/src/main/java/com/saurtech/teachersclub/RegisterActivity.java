@@ -1,10 +1,10 @@
 package com.saurtech.teachersclub;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatCheckBox;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -14,6 +14,8 @@ public class RegisterActivity extends AppCompatActivity {
     TextView regText, alreadyReg;
     ImageView bgRegLine, exitMain;
     Button regButton;
+
+    AppCompatCheckBox consentCheck;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,7 @@ public class RegisterActivity extends AppCompatActivity {
         bgRegLine = findViewById(R.id.bg_line_reg);
         regButton = findViewById(R.id.signUp_btn);
         exitMain = findViewById(R.id.exit_main);
+        consentCheck = findViewById(R.id.consent_check);
 
         exitMain.setOnClickListener(v -> {
             Intent mainIntent = new Intent(RegisterActivity.this, MainActivity.class);

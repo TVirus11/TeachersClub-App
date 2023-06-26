@@ -22,4 +22,18 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="i_agree_to_the_terms_conditions"><![CDATA[I agree to the Terms & Conditions]]></string>
+    <string name="your_name">Your Name</string>
+    <string name="email">Email</string>
+    <string name="create_password">Create Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="enter_your_full_name">Enter your Full Name</string>
+    <string name="enter_your_email">Enter your Email</string>
+    <string name="create_a_strong_password">Create a strong password</string>
+    <string name="confirm_your_password">Confirm your password</string>
+    <string name="login_here">Login Here</string>
+    <string name="enter_your_registered_email_id">Enter your registered email ID</string>
+    <string name="password">Password</string>
+    <string name="enter_your_password">Enter your Password</string>
+    <string name="login">Login</string>
+    <string name="new_here_register_yourself">New here? Register Yourself</string>
 </resources>

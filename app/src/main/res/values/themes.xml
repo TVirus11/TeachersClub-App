@@ -8,8 +8,7 @@
 
     <style name="Theme.TeachersClub" parent="Base.Theme.TeachersClub" />
 
-    <style name="MyCheckBox" parent="Base.Theme.TeachersClub">
-        <item name="colorControlNormal">@color/green</item>
-        <item name="colorControlActivated">@color/blue</item>
+    <style name="MyCheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:colorAccent">@color/blue</item>
     </style>
 </resources>

@@ -4,11 +4,8 @@
 
     <color name="white">#FFFFFFFF</color>
     <color name="blue">#FF4CC5F8</color>
+    <color name="light_blue">#FF6DC8EF</color>
     <color name="green">#FFC6E888</color>
     <color name="gray">#FFF5F5F5</color>
 
-    <!--    <selector xmlns:android="http://schemas.android.com/apk/res/android">-->
-    <!--        <item android:color="@color/green" android:state_checked="false" />-->
-    <!--        <item android:color="@color/blue" android:state_checked="true" />-->
-    <!--    </selector>-->
 </resources>
