@@ -8,7 +8,7 @@
     tools:context=".RegisterActivity">
 
     <ImageView
-        android:id="@+id/bg_line"
+        android:id="@+id/bg_line_reg"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:elevation="5dp"
