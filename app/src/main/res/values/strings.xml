@@ -43,4 +43,8 @@
     <string name="services">Services</string>
     <string name="notes">Notes</string>
     <string name="chatbot_for_queries">ChatBot for queries</string>
+    <string name="setting_button_main_page">Setting Button Main Page</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="nav_drawer_image">Nav Drawer Image</string>
 </resources>

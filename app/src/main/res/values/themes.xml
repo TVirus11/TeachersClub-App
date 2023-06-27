@@ -11,4 +11,10 @@
     <style name="MyCheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
         <item name="android:colorAccent">@color/blue</item>
     </style>
+
+    <style name="MenuItems" parent="Base.Theme.TeachersClub">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:fontFamily">sans-serif-condensed-medium</item>
+    </style>
 </resources>
