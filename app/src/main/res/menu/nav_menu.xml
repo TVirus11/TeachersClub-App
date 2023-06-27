@@ -39,4 +39,20 @@
         android:icon="@drawable/logout"
         android:title="@string/logout" />
 
+    <group
+        android:id="@+id/group_terms"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/about"
+            android:title="@string/about" />
+
+        <item
+            android:id="@+id/nav_privacy"
+            android:icon="@drawable/privacy"
+            android:title="@string/privacy" />
+
+    </group>
+
 </menu>

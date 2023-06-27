@@ -49,4 +49,7 @@
     <string name="nav_drawer_image">Nav Drawer Image</string>
     <string name="find_teacher">Find Teacher</string>
     <string name="logout">Logout</string>
+    <string name="about">About</string>
+    <string name="privacy">Privacy</string>
+    <string name="version_1_0">Version 1.0</string>
 </resources>
