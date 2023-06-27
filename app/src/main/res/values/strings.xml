@@ -48,4 +48,5 @@
     <string name="nav_close">Close</string>
     <string name="nav_drawer_image">Nav Drawer Image</string>
     <string name="find_teacher">Find Teacher</string>
+    <string name="logout">Logout</string>
 </resources>
