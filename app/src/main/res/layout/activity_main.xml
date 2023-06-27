@@ -52,6 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="start"
+            android:layout_marginTop="6dp"
             android:background="@color/green"
             app:itemIconTint="@color/blue"
             app:itemTextAppearance="@style/MenuItems"
@@ -59,7 +60,6 @@
             app:menu="@menu/nav_menu">
 
         </com.google.android.material.navigation.NavigationView>
-
 
     </androidx.drawerlayout.widget.DrawerLayout>
 
