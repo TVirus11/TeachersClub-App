@@ -4,11 +4,23 @@
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
         <item name="android:statusBarColor" >@color/green</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
     </style>
 
     <style name="Theme.TeachersClub" parent="Base.Theme.TeachersClub" />
 
     <style name="MyCheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
         <item name="android:colorAccent">@color/blue</item>
+    </style>
+
+    <style name="MenuItems" parent="Base.Theme.TeachersClub">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:fontFamily">sans-serif-condensed-medium</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/blue</item>
     </style>
 </resources>

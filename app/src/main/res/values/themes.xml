@@ -4,6 +4,7 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="android:statusBarColor">@color/green</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
     </style>
 
     <style name="Theme.TeachersClub" parent="Base.Theme.TeachersClub" />
@@ -16,5 +17,10 @@
         <item name="android:textSize">18sp</item>
         <item name="android:textStyle">bold|italic</item>
         <item name="android:fontFamily">sans-serif-condensed-medium</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/blue</item>
     </style>
 </resources>

@@ -12,6 +12,11 @@
         android:title="@string/profile" />
 
     <item
+        android:id="@+id/nav_find_teacher"
+        android:icon="@drawable/find"
+        android:title="@string/find_teacher" />
+
+    <item
         android:id="@+id/nav_services"
         android:icon="@drawable/services"
         android:title="@string/services" />
