@@ -38,4 +38,8 @@
     <string name="new_here_register_yourself">New here? Register Yourself</string>
     <string name="decoration">Decoration</string>
     <string name="exit_to_main_activity">Exit to main activity</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="services">Services</string>
+    <string name="notes">Notes</string>
 </resources>
