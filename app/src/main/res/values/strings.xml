@@ -42,4 +42,5 @@
     <string name="profile">Profile</string>
     <string name="services">Services</string>
     <string name="notes">Notes</string>
+    <string name="chatbot_for_queries">ChatBot for queries</string>
 </resources>

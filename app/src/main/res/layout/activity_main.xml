@@ -26,4 +26,17 @@
             android:src="@drawable/settings" />
     </androidx.appcompat.widget.Toolbar>
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/chat_bot_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/green"
+        android:contentDescription="@string/chatbot_for_queries"
+        android:src="@drawable/bot"
+        android:tint="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
