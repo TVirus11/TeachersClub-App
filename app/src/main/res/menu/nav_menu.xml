@@ -4,6 +4,7 @@
     <group
         android:id="@+id/group_home"
         android:checkableBehavior="single">
+
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/home"
@@ -13,6 +14,7 @@
     <group
         android:id="@+id/group_services"
         android:checkableBehavior="single">
+
         <item
             android:id="@+id/nav_profile"
             android:icon="@drawable/profile"
@@ -27,6 +29,11 @@
             android:id="@+id/nav_services"
             android:icon="@drawable/services"
             android:title="@string/services" />
+
+        <item
+            android:id="@+id/nav_courses"
+            android:icon="@drawable/courses"
+            android:title="@string/courses" />
 
         <item
             android:id="@+id/nav_notes"
@@ -52,6 +59,11 @@
             android:id="@+id/nav_privacy"
             android:icon="@drawable/privacy"
             android:title="@string/privacy" />
+
+        <item
+            android:id="@+id/nav_tnc"
+            android:icon="@drawable/tnc"
+            android:title="@string/terms_conditions" />
 
     </group>
 
