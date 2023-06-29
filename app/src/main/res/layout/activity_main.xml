@@ -75,16 +75,38 @@
 
             </androidx.cardview.widget.CardView>
 
-            <TextView
-                android:id="@+id/find_teacher_tv"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:fontFamily="sans-serif-condensed-medium"
-                android:text="@string/find_teacher"
-                android:textColor="@color/blue"
-                android:textSize="24sp"
-                android:textStyle="bold|italic" />
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/find_teacher_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="@string/find_teacher"
+                    android:textColor="@color/blue"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/view_more_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="@string/view_more"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic" />
+
+            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/small_cv_ll1"
