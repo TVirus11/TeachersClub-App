@@ -50,8 +50,9 @@
     <string name="find_teacher">Find Teacher</string>
     <string name="logout">Logout</string>
     <string name="about">About</string>
-    <string name="privacy">Privacy</string>
+    <string name="privacy">Privacy Policy</string>
     <string name="version_1_0">Version 1.0</string>
     <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
     <string name="courses">Courses</string>
+    <string name="get_support">Get Support</string>
 </resources>
