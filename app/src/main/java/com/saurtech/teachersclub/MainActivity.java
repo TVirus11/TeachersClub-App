@@ -13,6 +13,15 @@ import android.view.MenuItem;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdLoader;
+import com.google.android.gms.ads.LoadAdError;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+import com.google.android.gms.ads.nativead.NativeAd;
+import com.google.android.gms.ads.nativead.NativeAdOptions;
+
 public class MainActivity extends AppCompatActivity {
 
     public DrawerLayout drawerLayout;
@@ -36,6 +45,36 @@ public class MainActivity extends AppCompatActivity {
 
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.syncState();
+
+        //AddUnit
+        MobileAds.initialize(this, initializationStatus -> {
+        });
+
+        AdLoader adLoader = new AdLoader.Builder(this, "ca-app-pub-2018455743099821/1116086919")
+                .forNativeAd(new NativeAd.OnNativeAdLoadedListener() {
+                    @Override
+                    public void onNativeAdLoaded(@NonNull NativeAd nativeAd) {
+                        // Show the ad.
+
+
+                        if (isDestroyed()) {
+                            nativeAd.destroy();
+                            return;
+                        }
+                    }
+                })
+                .withAdListener(new AdListener() {
+                    @Override
+                    public void onAdFailedToLoad(@NonNull LoadAdError adError) {
+                        // Handle the failure by logging, altering the UI, and so on.
+                    }
+                })
+                .withNativeAdOptions(new NativeAdOptions.Builder()
+                        // Methods in the NativeAdOptions.Builder class can be
+                        // used here to specify individual options settings.
+                        .build())
+                .build();
+        //AddUnit
 
     }
 

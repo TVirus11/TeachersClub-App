@@ -75,213 +75,9 @@
 
             </androidx.cardview.widget.CardView>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/find_teacher_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_weight="1"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/find_teacher"
-                    android:textColor="@color/blue"
-                    android:textSize="24sp"
-                    android:textStyle="bold|italic" />
-
-                <TextView
-                    android:id="@+id/view_more_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_weight="1"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/view_more"
-                    android:textAlignment="textEnd"
-                    android:textColor="@color/blue"
-                    android:textSize="20sp"
-                    android:textStyle="bold|italic" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/small_cv_ll1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:orientation="horizontal">
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cv_small_1"
-                    android:layout_width="0dp"
-                    android:layout_height="160dp"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/green"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="10dp"
-                    app:cardMaxElevation="12dp"
-                    app:cardPreventCornerOverlap="true"
-                    app:cardUseCompatPadding="true">
-
-                    <ImageView
-                        android:id="@+id/img_small_cv1"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_gravity="center"
-                        android:contentDescription="@string/app_name"
-                        android:src="@mipmap/logo" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom|center_horizontal"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginBottom="4dp"
-                        android:fontFamily="sans-serif-condensed-medium"
-                        android:text="@string/app_name"
-                        android:textColor="@color/blue"
-                        android:textSize="20sp"
-                        android:textStyle="bold|italic" />
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cv_small_2"
-                    android:layout_width="0dp"
-                    android:layout_height="160dp"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/green"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="10dp"
-                    app:cardMaxElevation="12dp"
-                    app:cardPreventCornerOverlap="true"
-                    app:cardUseCompatPadding="true">
-
-                    <ImageView
-                        android:id="@+id/img_small_cv2"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_gravity="center"
-
-                        android:contentDescription="@string/app_name"
-                        android:src="@mipmap/logo" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom|center_horizontal"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginBottom="4dp"
-                        android:fontFamily="sans-serif-condensed-medium"
-                        android:text="@string/app_name"
-                        android:textColor="@color/blue"
-                        android:textSize="20sp"
-                        android:textStyle="bold|italic" />
-
-                </androidx.cardview.widget.CardView>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/small_cv_ll2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:orientation="horizontal">
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cv_small_3"
-                    android:layout_width="0dp"
-                    android:layout_height="160dp"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/green"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="10dp"
-                    app:cardMaxElevation="12dp"
-                    app:cardPreventCornerOverlap="true"
-                    app:cardUseCompatPadding="true">
-
-                    <ImageView
-                        android:id="@+id/img_small_cv3"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_gravity="center"
-
-                        android:contentDescription="@string/app_name"
-                        android:src="@mipmap/logo" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom|center_horizontal"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginBottom="4dp"
-                        android:fontFamily="sans-serif-condensed-medium"
-                        android:text="@string/app_name"
-                        android:textColor="@color/blue"
-                        android:textSize="20sp"
-                        android:textStyle="bold|italic" />
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cv_small_4"
-                    android:layout_width="0dp"
-                    android:layout_height="160dp"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/green"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="10dp"
-                    app:cardMaxElevation="12dp"
-                    app:cardPreventCornerOverlap="true"
-                    app:cardUseCompatPadding="true">
-
-                    <ImageView
-                        android:id="@+id/img_small_cv4"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_gravity="center"
-                        android:contentDescription="@string/app_name"
-                        android:src="@mipmap/logo" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom|center_horizontal"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginBottom="4dp"
-                        android:fontFamily="sans-serif-condensed-medium"
-                        android:text="@string/app_name"
-                        android:textColor="@color/blue"
-                        android:textSize="20sp"
-                        android:textStyle="bold|italic" />
-
-                </androidx.cardview.widget.CardView>
-
-            </LinearLayout>
-
         </LinearLayout>
 
     </ScrollView>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/chat_bot_fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="@color/green"
-        android:contentDescription="@string/chatbot_for_queries"
-        android:src="@drawable/bot"
-        android:tint="@color/blue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
     <androidx.drawerlayout.widget.DrawerLayout
         android:id="@+id/drawer_layout"
@@ -315,5 +111,13 @@
         </com.google.android.material.navigation.NavigationView>
 
     </androidx.drawerlayout.widget.DrawerLayout>
+
+    <com.google.android.gms.ads.nativead.NativeAdView
+        android:id="@+id/add_main_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
