@@ -61,4 +61,18 @@
     <string name="official_skd_11_gmail_com">official.skd.11@gmail.com</string>
     <string name="basic_details">Basic Details</string>
     <string name="edit">Edit</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="_24">24</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="educational_details">Educational Details</string>
+    <string name="school_college">School/College</string>
+    <string name="gift_bhubaneswar">GIFT, Bhubaneswar</string>
+    <string name="qualification">Qualification</string>
+    <string name="b_tech">B. Tech</string>
+    <string name="completed_pursuing">Completed/Pursuing</string>
+    <string name="_2021">2021</string>
+    <string name="specialisation">Specialisation</string>
+    <string name="computer_science">Computer Science</string>
 </resources>
