@@ -84,7 +84,6 @@
                     android:id="@+id/basic_details_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
                     android:fontFamily="sans-serif-condensed-medium"
                     android:text="@string/basic_details"
                     android:textColor="@color/blue"
