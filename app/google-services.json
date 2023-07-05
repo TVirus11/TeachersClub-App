@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1049877550452",
+    "project_id": "teachers-club-391914",
+    "storage_bucket": "teachers-club-391914.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049877550452:android:5258d717a4a03705704821",
+        "android_client_info": {
+          "package_name": "com.saurtech.teachersclub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1049877550452-nfmm30elv27qclglflfobj9ec51rh2cq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.saurtech.teachersclub",
+            "certificate_hash": "7c63449b4603984c50269922c43816cd56206071"
+          }
+        },
+        {
+          "client_id": "1049877550452-i46kcfga584p3b4q7dcne09io4td6f8v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjgUirg2wc6UkTVJb-5sTkftfy2j66Vq4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1049877550452-i46kcfga584p3b4q7dcne09io4td6f8v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
