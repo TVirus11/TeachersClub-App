@@ -1,6 +1,5 @@
 package com.saurtech.teachersclub;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatCheckBox;
 
@@ -13,11 +12,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
-import com.google.firebase.firestore.QuerySnapshot;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -71,27 +67,24 @@ public class LoginActivity extends AppCompatActivity {
             }
             db.collection("users")
                     .get()
-                    .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-                        @Override
-                        public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                            if (task.isSuccessful()) {
-                                for (QueryDocumentSnapshot doc : task.getResult()) {
-                                    String a = doc.getString("Email");
-                                    String b = doc.getString("Password");
+                    .addOnCompleteListener(task -> {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot doc : task.getResult()) {
+                                String a = doc.getString("Email");
+                                String b = doc.getString("Password");
 
-                                    String a1 = emailET.getText().toString().trim();
-                                    String b1 = passET.getText().toString().trim();
+                                String a1 = emailET.getText().toString().trim();
+                                String b1 = passET.getText().toString().trim();
 
-                                    assert a != null;
-                                    assert b != null;
-                                    if (a.equalsIgnoreCase(a1) & b.equalsIgnoreCase(b1)) {
-                                        Intent mainIntent = new Intent(LoginActivity.this, MainActivity.class);
-                                        startActivity(mainIntent);
-                                        Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
-                                        break;
-                                    } else
-                                        Toast.makeText(LoginActivity.this, "Login Failed! Please check your email and password", Toast.LENGTH_SHORT).show();
-                                }
+                                assert a != null;
+                                assert b != null;
+                                if (a.equalsIgnoreCase(a1) & b.equalsIgnoreCase(b1)) {
+                                    Intent mainIntent = new Intent(LoginActivity.this, MainActivity.class);
+                                    startActivity(mainIntent);
+                                    Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
+                                    break;
+                                } else
+                                    Toast.makeText(LoginActivity.this, "Login Failed! Please check your email and password", Toast.LENGTH_SHORT).show();
                             }
                         }
                     });
