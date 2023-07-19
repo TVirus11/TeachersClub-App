@@ -22,7 +22,6 @@ public class LoginActivity extends AppCompatActivity {
     EditText emailET, passET;
     Button loginBtn;
     AppCompatCheckBox consentCheck;
-
     FirebaseFirestore db;
 
     @Override
@@ -45,16 +44,6 @@ public class LoginActivity extends AppCompatActivity {
         consentCheck = findViewById(R.id.consent_check);
 
         loginBtn = findViewById(R.id.login_btn);
-
-        //Firebase FireStore Database
-
-        //Firebase FireStore Database
-
-        newUserTV.setOnClickListener(v -> {
-            Intent regIntent = new Intent(LoginActivity.this, RegisterActivity.class);
-            startActivity(regIntent);
-            finish();
-        });
     }
 
     //Firebase FireStore Database
@@ -78,11 +67,10 @@ public class LoginActivity extends AppCompatActivity {
 
                                 assert a != null;
                                 assert b != null;
-                                if (a.equalsIgnoreCase(a1) & b.equalsIgnoreCase(b1)) {
+                                if (a.equals(a1) & b.equals(b1)) {
                                     Intent mainIntent = new Intent(LoginActivity.this, MainActivity.class);
                                     startActivity(mainIntent);
                                     Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
-                                    break;
                                 } else
                                     Toast.makeText(LoginActivity.this, "Login Failed! Please check your email and password", Toast.LENGTH_SHORT).show();
                             }
