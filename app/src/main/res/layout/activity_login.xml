@@ -11,12 +11,12 @@
         android:id="@+id/bg_line_login"
         android:layout_width="match_parent"
         android:layout_height="200dp"
+        android:contentDescription="@string/decoration"
         android:elevation="3dp"
         android:src="@drawable/on_board_back2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/decoration" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/login_text"
@@ -39,11 +39,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:contentDescription="@string/exit_to_main_activity"
         android:elevation="3dp"
         android:src="@drawable/exit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/exit_to_main_activity" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/email_tv_login"
@@ -142,6 +142,7 @@
         android:backgroundTint="@color/blue"
         android:elevation="3dp"
         android:fontFamily="sans-serif-condensed-medium"
+        android:onClick="onClick"
         android:text="@string/login"
         android:textColor="@color/green"
         android:textSize="24sp"
@@ -156,6 +157,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:fontFamily="sans-serif-condensed-medium"
+        android:onClick="onClick"
         android:text="@string/new_here_register_yourself"
         android:textColor="@color/blue"
         android:textSize="18sp"

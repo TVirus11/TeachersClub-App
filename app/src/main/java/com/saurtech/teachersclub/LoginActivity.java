@@ -99,7 +99,6 @@ public class LoginActivity extends AppCompatActivity {
             Intent regIntent = new Intent(LoginActivity.this, RegisterActivity.class);
             startActivity(regIntent);
         }
-
     }
     //Firebase FireStore Database
 }
