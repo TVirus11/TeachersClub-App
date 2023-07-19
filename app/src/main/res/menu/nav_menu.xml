@@ -56,6 +56,11 @@
             android:title="@string/about" />
 
         <item
+            android:id="@+id/nav_FAQ"
+            android:icon="@drawable/faq"
+            android:title="@string/faq" />
+
+        <item
             android:id="@+id/nav_support"
             android:icon="@drawable/support"
             android:title="@string/get_support" />

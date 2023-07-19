@@ -2,12 +2,15 @@
 <resources>
     <color name="black">#FF000000</color>
 
-        <color name="white">#FFFFFFFF</color>
-        <color name="blue">#FF4CC5F8</color>
-<!--    <color name="blue">#FFFFFFFF</color>-->
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#FF4CC5F8</color>
     <color name="light_blue">#FF6DC8EF</color>
-        <color name="green">#FFC6E888</color>
-<!--    <color name="green">#FF000080</color>-->
+    <color name="green">#FFC6E888</color>
     <color name="gray">#FFF5F5F5</color>
+
+    <!--    Main Colors-->
+    <color name="color_secondary">#FFF5F5F5</color>
+    <color name="color_primary">#FF0D47A1</color>
+    <color name="color_text">#FF000000</color>
 
 </resources>

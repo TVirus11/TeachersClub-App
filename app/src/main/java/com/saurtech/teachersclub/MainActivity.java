@@ -11,6 +11,7 @@ import androidx.viewpager2.widget.ViewPager2;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.webkit.WebView;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.FirebaseApp;
@@ -82,6 +83,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (id == R.id.nav_logout) {
 
         } else if (id == R.id.nav_about) {
+
+        } else if (id == R.id.nav_FAQ) {
+            WebView wb = new WebView(this);
+            wb.loadUrl("file:///assets/FAQs.html");
+            setContentView(wb);
 
         } else if (id == R.id.nav_support) {
             Intent supportActivity = new Intent(MainActivity.this, GetSupportActivity.class);

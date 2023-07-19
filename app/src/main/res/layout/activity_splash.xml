@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/green"
+    android:background="@color/color_secondary"
     tools:context=".SplashActivity">
 
     <ImageView
@@ -27,7 +27,7 @@
         android:fontFamily="sans-serif-condensed-medium"
         android:padding="2dp"
         android:text="@string/developed_in_india_with"
-        android:textColor="@color/blue"
+        android:textColor="@color/color_primary"
         android:textSize="16sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"

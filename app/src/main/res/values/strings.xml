@@ -56,7 +56,8 @@
     <string name="courses">Courses</string>
     <string name="get_support">Get Support</string>
     <string name="view_more"><![CDATA[View More >>>]]></string>
-    <string name="app_id">ca-app-pub-2018455743099821~7562075768</string>
+    <string name="app_id">ca-app-pub-4040977291751617~4203765742</string>
+    <string name="ad_unit_id">ca-app-pub-4040977291751617/7869448517</string>
     <string name="saurav_kumar">Saurav Kumar</string>
     <string name="official_skd_11_gmail_com">official.skd.11@gmail.com</string>
     <string name="basic_details">Basic Details</string>
@@ -76,4 +77,5 @@
     <string name="specialisation">Specialisation</string>
     <string name="computer_science">Computer Science</string>
     <string name="support_back_button">Support Back Button</string>
+    <string name="faq">FAQ</string>
 </resources>
