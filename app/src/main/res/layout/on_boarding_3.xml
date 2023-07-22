@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/green">
+    android:background="@color/color_secondary">
 
     <ImageView
         android:id="@+id/on_board_logo3"
@@ -38,7 +38,7 @@
         android:gravity="center"
         android:padding="16dp"
         android:text="@string/you_can_ask_questions_24x7_and_get_them_answered_by_our_expert_teachers_within_an_hour"
-        android:textColor="@color/blue"
+        android:textColor="@color/color_text"
         android:textSize="24sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,10 +51,10 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:backgroundTint="@color/blue"
+        android:backgroundTint="@color/color_primary"
         android:onClick="onNextButtonClick"
         android:text="@string/get_started"
-        android:textColor="@color/green"
+        android:textColor="@color/color_secondary"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

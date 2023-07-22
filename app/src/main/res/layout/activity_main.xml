@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f5f5f5"
+    android:background="@color/color_secondary"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/green"
+        android:background="@color/color_primary"
         android:elevation="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,7 +24,8 @@
             android:layout_gravity="end"
             android:layout_marginEnd="16dp"
             android:contentDescription="@string/setting_button_main_page"
-            android:src="@drawable/settings" />
+            android:src="@drawable/settings"
+            app:tint="@color/color_secondary" />
     </androidx.appcompat.widget.Toolbar>
 
     <ScrollView
@@ -45,7 +46,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:backgroundTint="@color/green"
+                android:backgroundTint="@color/color_primary"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="10dp"
                 app:cardMaxElevation="12dp"
@@ -69,7 +70,7 @@
                     android:layout_marginBottom="4dp"
                     android:fontFamily="sans-serif-condensed-medium"
                     android:text="@string/app_name"
-                    android:textColor="@color/blue"
+                    android:textColor="@color/color_secondary"
                     android:textSize="20sp"
                     android:textStyle="bold|italic" />
 
@@ -93,10 +94,10 @@
             android:layout_height="match_parent"
             android:layout_gravity="start"
             android:layout_marginTop="6dp"
-            android:background="@color/green"
-            app:itemIconTint="@color/blue"
+            android:background="@color/color_primary"
+            app:itemIconTint="@color/color_secondary"
             app:itemTextAppearance="@style/MenuItems"
-            app:itemTextColor="@color/blue"
+            app:itemTextColor="@color/color_secondary"
             app:menu="@menu/nav_menu">
 
             <TextView
@@ -105,20 +106,12 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|center_horizontal"
                 android:text="@string/version_1_0"
-                android:textColor="@color/blue"
+                android:textColor="@color/color_secondary"
                 android:textSize="18sp"
                 android:textStyle="bold|italic" />
 
         </com.google.android.material.navigation.NavigationView>
 
     </androidx.drawerlayout.widget.DrawerLayout>
-
-    <com.google.android.gms.ads.nativead.NativeAdView
-        android:id="@+id/add_main_page"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

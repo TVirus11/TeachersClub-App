@@ -12,5 +12,6 @@
     <color name="color_secondary">#FFF5F5F5</color>
     <color name="color_primary">#FF0D47A1</color>
     <color name="color_text">#FF000000</color>
+    <color name="color_text_lite">#242424</color>
 
 </resources>

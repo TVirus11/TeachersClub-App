@@ -27,7 +27,7 @@
         android:fontFamily="sans-serif-condensed-medium"
         android:padding="2dp"
         android:text="@string/developed_in_india_with"
-        android:textColor="@color/color_primary"
+        android:textColor="@color/color_text"
         android:textSize="16sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
