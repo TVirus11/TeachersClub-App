@@ -8,6 +8,7 @@
     tools:context=".GetSupportActivity">
 
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/contactUsToolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/color_primary"
@@ -27,5 +28,218 @@
             app:tint="@color/color_secondary" />
 
     </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/contactUsScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contactUsToolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/contactUsTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/contact_us"
+                android:textColor="@color/color_primary"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/emailContactTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/email"
+                android:textColor="@color/color_text"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/emailContactET"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints="emailAddress"
+                android:background="@drawable/et_custom"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:hint="@string/enter_your_registered_email_address"
+                android:inputType="textEmailAddress"
+                android:padding="4dp"
+                android:textColor="@color/color_text" />
+
+            <TextView
+                android:id="@+id/mobileContactTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/mobile_no"
+                android:textColor="@color/color_text"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/mobileContactET"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints="emailAddress"
+                android:background="@drawable/et_custom"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:hint="@string/enter_your_mobile_number"
+                android:inputType="phone"
+                android:padding="4dp"
+                android:textColor="@color/color_text" />
+
+            <TextView
+                android:id="@+id/messageContactTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/message"
+                android:textColor="@color/color_text"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/messageContactET"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints="emailAddress"
+                android:background="@drawable/et_custom"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="start"
+                android:hint="@string/type_your_message_in_150_words"
+                android:inputType="textCapSentences|textMultiLine"
+                android:padding="4dp"
+                android:textColor="@color/color_text" />
+
+            <Button
+                android:id="@+id/contactUsSendBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/color_primary"
+                android:elevation="3dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/send"
+                android:textColor="@color/color_secondary"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_primary"
+                android:elevation="3dp"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="280dp" />
+
+            <TextView
+                android:id="@+id/otherWaysTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/other_ways_to_reach_us"
+                android:textColor="@color/color_primary"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contactEmailID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/mail_us_at_s_teachersclub_gmail_com"
+                android:textColor="@color/color_primary"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/contactCallTollFree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/call_us_at_0123456789"
+                android:textColor="@color/color_primary"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_primary"
+                android:elevation="3dp"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="280dp" />
+
+            <TextView
+                android:id="@+id/contactChatBot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/chat_with_brainstorm"
+                android:textColor="@color/color_primary"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/chatBotBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/color_primary"
+                android:elevation="3dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/brainstorm"
+                android:textColor="@color/color_secondary"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

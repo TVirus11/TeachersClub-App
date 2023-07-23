@@ -78,4 +78,16 @@
     <string name="computer_science">Computer Science</string>
     <string name="support_back_button">Support Back Button</string>
     <string name="faq">FAQ</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="enter_your_registered_email_address">Enter your registered email address</string>
+    <string name="enter_your_mobile_number">Enter your mobile number</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="message">Message</string>
+    <string name="type_your_message_in_150_words">Type your message in 150 words</string>
+    <string name="other_ways_to_reach_us">Other Ways To Reach Us</string>
+    <string name="send">Send</string>
+    <string name="mail_us_at_s_teachersclub_gmail_com">Mail Us At : s.teachersclub@gmail.com</string>
+    <string name="call_us_at_0123456789">Call Us At : 0123456789</string>
+    <string name="chat_with_brainstorm">Chat With BrainStorm</string>
+    <string name="brainstorm">Brainstorm</string>
 </resources>
