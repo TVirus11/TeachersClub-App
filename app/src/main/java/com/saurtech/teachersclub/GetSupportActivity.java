@@ -3,10 +3,12 @@ package com.saurtech.teachersclub;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class GetSupportActivity extends AppCompatActivity {
@@ -16,6 +18,7 @@ public class GetSupportActivity extends AppCompatActivity {
     EditText emailET, mobileNoET, messageET;
     Button sendBtn, chatBtn;
     View divider, divider1;
+    ImageView backButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +38,7 @@ public class GetSupportActivity extends AppCompatActivity {
         otherWaysTV = findViewById(R.id.otherWaysTV);
         mailAtTV = findViewById(R.id.contactEmailID);
         callAtTV = findViewById(R.id.contactCallTollFree);
+        chatTV = findViewById(R.id.contactChatBot);
 
         emailET = findViewById(R.id.emailContactET);
         mobileNoET = findViewById(R.id.mobileContactET);
@@ -45,5 +49,12 @@ public class GetSupportActivity extends AppCompatActivity {
 
         divider = findViewById(R.id.divider);
         divider1 = findViewById(R.id.divider1);
+
+        backButton = findViewById(R.id.support_back_arrow);
+        backButton.setOnClickListener(v -> {
+            onBackPressed();
+            Intent mainIntent = new Intent(GetSupportActivity.this, MainActivity.class);
+            finish();
+        });
     }
 }

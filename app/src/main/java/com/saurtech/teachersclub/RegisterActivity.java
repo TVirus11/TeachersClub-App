@@ -72,7 +72,7 @@ public class RegisterActivity extends AppCompatActivity {
             } else {
                 documentReference.get().addOnSuccessListener(documentSnapshot -> {
                     if (documentSnapshot.exists()) {
-                        Toast.makeText(RegisterActivity.this, "The user with same details already exists", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(RegisterActivity.this, "The user with same details already exists! Kindly try to Login.", Toast.LENGTH_SHORT).show();
                     } else {
                         Map<String, Object> regEntry = new HashMap<>();
                         regEntry.put("Name", fullNameET.getText().toString());

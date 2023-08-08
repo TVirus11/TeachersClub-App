@@ -90,4 +90,6 @@
     <string name="call_us_at_0123456789">Call Us At : 0123456789</string>
     <string name="chat_with_brainstorm">Chat With BrainStorm</string>
     <string name="brainstorm">Brainstorm</string>
+    <string name="button">Button</string>
+    <string name="chat">chat</string>
 </resources>

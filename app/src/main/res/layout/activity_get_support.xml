@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:contentDescription="@string/support_back_button"
+            android:contentDescription="@string/chat"
             android:src="@drawable/back"
             app:tint="@color/color_secondary" />
 
@@ -36,7 +36,7 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/contactUsToolbar">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -48,7 +48,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="66dp"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:text="@string/contact_us"
                 android:textColor="@color/color_primary"
@@ -59,8 +59,8 @@
                 android:id="@+id/emailContactTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:text="@string/email"
                 android:textColor="@color/color_text"
@@ -69,11 +69,10 @@
 
             <EditText
                 android:id="@+id/emailContactET"
-                android:layout_width="match_parent"
+                android:layout_width="350dp"
                 android:layout_height="48dp"
-                android:layout_marginStart="16dp"
+                android:layout_gravity="center"
                 android:layout_marginTop="4dp"
-                android:layout_marginEnd="16dp"
                 android:autofillHints="emailAddress"
                 android:background="@drawable/et_custom"
                 android:fontFamily="sans-serif-condensed-medium"
@@ -86,7 +85,7 @@
                 android:id="@+id/mobileContactTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:text="@string/mobile_no"
@@ -96,11 +95,10 @@
 
             <EditText
                 android:id="@+id/mobileContactET"
-                android:layout_width="match_parent"
+                android:layout_width="350dp"
                 android:layout_height="48dp"
-                android:layout_marginStart="16dp"
+                android:layout_gravity="center"
                 android:layout_marginTop="4dp"
-                android:layout_marginEnd="16dp"
                 android:autofillHints="emailAddress"
                 android:background="@drawable/et_custom"
                 android:fontFamily="sans-serif-condensed-medium"
@@ -113,7 +111,7 @@
                 android:id="@+id/messageContactTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:text="@string/message"
@@ -123,11 +121,10 @@
 
             <EditText
                 android:id="@+id/messageContactET"
-                android:layout_width="match_parent"
+                android:layout_width="350dp"
                 android:layout_height="180dp"
-                android:layout_marginStart="16dp"
+                android:layout_gravity="center"
                 android:layout_marginTop="4dp"
-                android:layout_marginEnd="16dp"
                 android:autofillHints="emailAddress"
                 android:background="@drawable/et_custom"
                 android:fontFamily="sans-serif-condensed-medium"
@@ -139,11 +136,10 @@
 
             <Button
                 android:id="@+id/contactUsSendBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
                 android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
                 android:layout_marginBottom="8dp"
                 android:backgroundTint="@color/color_primary"
                 android:elevation="3dp"
@@ -179,7 +175,7 @@
                 android:id="@+id/contactEmailID"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_gravity="center"
                 android:layout_marginTop="16dp"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:text="@string/mail_us_at_s_teachersclub_gmail_com"
@@ -191,7 +187,7 @@
                 android:id="@+id/contactCallTollFree"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_gravity="center"
                 android:layout_marginTop="8dp"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:text="@string/call_us_at_0123456789"
@@ -223,11 +219,10 @@
 
             <Button
                 android:id="@+id/chatBotBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="16dp"
                 android:layout_marginBottom="16dp"
                 android:backgroundTint="@color/color_primary"
                 android:elevation="3dp"
