@@ -52,8 +52,8 @@ public class GetSupportActivity extends AppCompatActivity {
 
         backButton = findViewById(R.id.support_back_arrow);
         backButton.setOnClickListener(v -> {
-            onBackPressed();
             Intent mainIntent = new Intent(GetSupportActivity.this, MainActivity.class);
+            startActivity(mainIntent);
             finish();
         });
     }
