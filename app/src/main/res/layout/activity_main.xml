@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:layout_marginEnd="16dp"
-            android:contentDescription="@string/setting_button_main_page"
+            android:contentDescription="@string/settings"
             android:src="@drawable/settings"
             app:tint="@color/color_secondary" />
     </androidx.appcompat.widget.Toolbar>
@@ -32,13 +32,16 @@
         android:id="@+id/main_scrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
+            android:id="@+id/mainLinearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="66dp"
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView

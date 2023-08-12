@@ -19,7 +19,7 @@
         android:id="@+id/bg_line"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:contentDescription="@string/onboardback"
+        android:contentDescription="@string/onboard_back"
         android:elevation="3dp"
         android:src="@drawable/on_board_back"
         app:layout_constraintBottom_toBottomOf="parent"
