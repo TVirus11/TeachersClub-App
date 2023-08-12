@@ -47,7 +47,7 @@ public class NotesActivity extends AppCompatActivity {
 
         AdView adView = new AdView(this);
         adView.setAdSize(AdSize.BANNER);
-        adView.setAdUnitId("ca-app-pub-3940256099942544/6300978111");
+        adView.setAdUnitId("ca-app-pub-3940256099942544/6300978111"); //Test Ad Unit ID
 
         adView = findViewById(R.id.adViewNotes);
         AdRequest adRequest = new AdRequest.Builder().build();

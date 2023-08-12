@@ -120,4 +120,12 @@
     <string name="class_12">Class 12</string>
     <string name="class_10">Class 10</string>
     <string name="class_9">Class 9</string>
+    <string name="class_notes">Class Notes</string>
+    <string name="competitive_paper_notes_and_question_banks">Competitive Paper Notes and Question Banks</string>
+    <string name="computer">Computer</string>
+    <string name="jee">JEE</string>
+    <string name="programming">Programming</string>
+    <string name="gen_science">Gen Science</string>
+    <string name="gen_studies">Gen Studies</string>
+    <string name="english">English</string>
 </resources>

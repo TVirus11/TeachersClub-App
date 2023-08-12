@@ -26,11 +26,6 @@
             android:title="@string/find_teacher" />
 
         <item
-            android:id="@+id/nav_services"
-            android:icon="@drawable/services"
-            android:title="@string/services" />
-
-        <item
             android:id="@+id/nav_courses"
             android:icon="@drawable/courses"
             android:title="@string/courses" />

@@ -73,8 +73,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         } else if (id == R.id.nav_find_teacher) {
 
-        } else if (id == R.id.nav_services) {
-
         } else if (id == R.id.nav_courses) {
 
         } else if (id == R.id.nav_notes) {
