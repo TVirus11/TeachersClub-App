@@ -80,7 +80,7 @@
                         android:fontFamily="sans-serif-condensed-medium"
                         android:text="@string/class_5"
                         android:textColor="@color/color_secondary"
-                        android:textSize="20sp"
+                        android:textSize="23sp"
                         android:textStyle="bold" />
 
                 </androidx.cardview.widget.CardView>
@@ -108,7 +108,7 @@
                         android:fontFamily="sans-serif-condensed-medium"
                         android:text="@string/class_6"
                         android:textColor="@color/color_secondary"
-                        android:textSize="20sp"
+                        android:textSize="23sp"
                         android:textStyle="bold" />
 
                 </androidx.cardview.widget.CardView>
@@ -140,7 +140,7 @@
                         android:fontFamily="sans-serif-condensed-medium"
                         android:text="@string/class_7"
                         android:textColor="@color/color_secondary"
-                        android:textSize="20sp"
+                        android:textSize="23sp"
                         android:textStyle="bold" />
 
                 </androidx.cardview.widget.CardView>
@@ -168,7 +168,7 @@
                         android:fontFamily="sans-serif-condensed-medium"
                         android:text="@string/class_8"
                         android:textColor="@color/color_secondary"
-                        android:textSize="20sp"
+                        android:textSize="23sp"
                         android:textStyle="bold" />
 
                 </androidx.cardview.widget.CardView>
@@ -200,7 +200,7 @@
                         android:fontFamily="sans-serif-condensed-medium"
                         android:text="@string/class_9"
                         android:textColor="@color/color_secondary"
-                        android:textSize="20sp"
+                        android:textSize="23sp"
                         android:textStyle="bold" />
 
                 </androidx.cardview.widget.CardView>
@@ -228,7 +228,7 @@
                         android:fontFamily="sans-serif-condensed-medium"
                         android:text="@string/class_10"
                         android:textColor="@color/color_secondary"
-                        android:textSize="20sp"
+                        android:textSize="23sp"
                         android:textStyle="bold" />
 
                 </androidx.cardview.widget.CardView>
@@ -260,7 +260,7 @@
                         android:fontFamily="sans-serif-condensed-medium"
                         android:text="@string/class_11"
                         android:textColor="@color/color_secondary"
-                        android:textSize="20sp"
+                        android:textSize="23sp"
                         android:textStyle="bold" />
 
                 </androidx.cardview.widget.CardView>
@@ -288,7 +288,7 @@
                         android:fontFamily="sans-serif-condensed-medium"
                         android:text="@string/class_12"
                         android:textColor="@color/color_secondary"
-                        android:textSize="20sp"
+                        android:textSize="23sp"
                         android:textStyle="bold" />
 
                 </androidx.cardview.widget.CardView>
@@ -298,6 +298,16 @@
 
     </ScrollView>
 
-
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adViewNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintBottom_toBottomOf="parent">
+    </com.google.android.gms.ads.AdView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
