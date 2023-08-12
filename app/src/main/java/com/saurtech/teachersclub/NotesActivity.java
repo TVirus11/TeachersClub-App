@@ -4,7 +4,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageView;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
@@ -16,6 +18,7 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 public class NotesActivity extends AppCompatActivity {
 
     Toolbar toolbar;
+    ImageView backArrow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +30,13 @@ public class NotesActivity extends AppCompatActivity {
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayShowTitleEnabled(false);
         }
+
+        backArrow = findViewById(R.id.notesBackArrow);
+        backArrow.setOnClickListener(v -> {
+            Intent mainIntent = new Intent(NotesActivity.this, MainActivity.class);
+            startActivity(mainIntent);
+            finish();
+        });
 
         //Add
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
