@@ -3,6 +3,7 @@ package com.saurtech.teachersclub;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,6 +20,8 @@ public class NotesActivity extends AppCompatActivity {
 
     Toolbar toolbar;
     ImageView backArrow;
+    CardView card5, card6, card7, card8, card9, card10, card11, card12,
+            cardComputer, cardJEE, cardProgramming, cardGenScience, cardGenStudies, cardEnglish;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +39,76 @@ public class NotesActivity extends AppCompatActivity {
             Intent mainIntent = new Intent(NotesActivity.this, MainActivity.class);
             startActivity(mainIntent);
             finish();
+        });
+
+        card5 = findViewById(R.id.cardView1);
+        card5.setOnClickListener(v -> {
+
+        });
+
+        card6 = findViewById(R.id.cardView2);
+        card6.setOnClickListener(v -> {
+
+        });
+
+        card7 = findViewById(R.id.cardView3);
+        card7.setOnClickListener(v -> {
+
+        });
+
+        card8 = findViewById(R.id.cardView4);
+        card8.setOnClickListener(v -> {
+
+        });
+
+        card9 = findViewById(R.id.cardView5);
+        card9.setOnClickListener(v -> {
+
+        });
+
+        card10 = findViewById(R.id.cardView6);
+        card10.setOnClickListener(v -> {
+
+        });
+
+        card11 = findViewById(R.id.cardView7);
+        card11.setOnClickListener(v -> {
+
+        });
+
+        card12 = findViewById(R.id.cardView8);
+        card12.setOnClickListener(v -> {
+
+        });
+
+        cardComputer = findViewById(R.id.cardView9);
+        cardComputer.setOnClickListener(v -> {
+
+        });
+
+        cardJEE = findViewById(R.id.cardView10);
+        cardJEE.setOnClickListener(v -> {
+
+        });
+
+        cardProgramming = findViewById(R.id.cardView11);
+        cardProgramming.setOnClickListener(v -> {
+
+        });
+
+        cardGenScience = findViewById(R.id.cardView12);
+        cardGenScience.setOnClickListener(v -> {
+
+        });
+
+        cardGenStudies = findViewById(R.id.cardView13);
+        cardGenStudies.setOnClickListener(v -> {
+
+        });
+
+        cardEnglish = findViewById(R.id.cardView14);
+        cardEnglish.setOnClickListener(v -> {
+
         });
 
         //Add
