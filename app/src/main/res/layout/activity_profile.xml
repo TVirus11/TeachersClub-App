@@ -48,7 +48,7 @@
             android:text="@string/saurav_kumar"
             android:textColor="@color/color_secondary"
             android:textSize="24sp"
-            android:textStyle="bold|italic" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/profile_email"
@@ -61,353 +61,29 @@
             android:text="@string/official_skd_11_gmail_com"
             android:textColor="@color/color_secondary"
             android:textSize="24sp"
-            android:textStyle="bold|italic" />
+            android:textStyle="bold" />
 
     </LinearLayout>
 
     <ScrollView
+        android:id="@+id/profileScrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:id="@+id/profileMainLL"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="260dp"
             android:orientation="vertical">
 
 
-            <RelativeLayout
-                android:id="@+id/basic_details"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/profile_title_bg"
-                android:elevation="5dp"
-                android:padding="2dp">
-
-                <TextView
-                    android:id="@+id/basic_details_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/basic_details"
-                    android:textColor="@color/color_secondary"
-                    android:textSize="24sp"
-                    android:textStyle="bold|italic" />
-
-                <TextView
-                    android:id="@+id/edit_basic_details"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="4dp"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/edit"
-                    android:textColor="@color/color_secondary"
-                    android:textSize="24sp"
-                    android:textStyle="bold|italic" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/basic_details_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="20dp">
-
-                <TextView
-                    android:id="@+id/name_head_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/name"
-                    android:textColor="@color/black"
-                    android:textSize="24sp"
-                    android:textStyle="bold|italic" />
-
-                <TextView
-                    android:id="@+id/name_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="8dp"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/saurav_kumar"
-                    android:textColor="@color/color_primary"
-                    android:textSize="20sp"
-                    android:textStyle="italic" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/basic_details_age"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="20dp">
-
-                <TextView
-                    android:id="@+id/age_head_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/age"
-                    android:textColor="@color/black"
-                    android:textSize="24sp"
-                    android:textStyle="bold|italic" />
-
-                <TextView
-                    android:id="@+id/age_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="8dp"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/_24"
-                    android:textColor="@color/color_primary"
-                    android:textSize="20sp"
-                    android:textStyle="italic" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/basic_details_gender"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="20dp">
-
-                <TextView
-                    android:id="@+id/gender_head_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/gender"
-                    android:textColor="@color/black"
-                    android:textSize="24sp"
-                    android:textStyle="bold|italic" />
-
-                <TextView
-                    android:id="@+id/gender_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="8dp"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/male"
-                    android:textColor="@color/color_primary"
-                    android:textSize="20sp"
-                    android:textStyle="italic" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/basic_details_email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="20dp">
-
-                <TextView
-                    android:id="@+id/email_head_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/email"
-                    android:textColor="@color/black"
-                    android:textSize="24sp"
-                    android:textStyle="bold|italic" />
-
-                <TextView
-                    android:id="@+id/email_tv_profile"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="8dp"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/official_skd_11_gmail_com"
-                    android:textColor="@color/color_primary"
-                    android:textSize="20sp"
-                    android:textStyle="italic" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/educational_details"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/profile_title_bg"
-                android:elevation="5dp"
-                android:padding="2dp">
-
-                <TextView
-                    android:id="@+id/educational_details_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/educational_details"
-                    android:textColor="@color/color_secondary"
-                    android:textSize="24sp"
-                    android:textStyle="bold|italic" />
-
-                <TextView
-                    android:id="@+id/edit_educational_details"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="4dp"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/edit"
-                    android:textColor="@color/color_secondary"
-                    android:textSize="24sp"
-                    android:textStyle="bold|italic" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/educational_details_school"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="20dp">
-
-                <TextView
-                    android:id="@+id/school_head_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/school_college"
-                    android:textColor="@color/black"
-                    android:textSize="24sp"
-                    android:textStyle="bold|italic" />
-
-                <TextView
-                    android:id="@+id/school_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="8dp"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/gift_bhubaneswar"
-                    android:textColor="@color/color_primary"
-                    android:textSize="20sp"
-                    android:textStyle="italic" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/educational_details_qualification"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="20dp">
-
-                <TextView
-                    android:id="@+id/qualification_head_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/qualification"
-                    android:textColor="@color/black"
-                    android:textSize="24sp"
-                    android:textStyle="bold|italic" />
-
-                <TextView
-                    android:id="@+id/qualification_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="8dp"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/b_tech"
-                    android:textColor="@color/color_primary"
-                    android:textSize="20sp"
-                    android:textStyle="italic" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/educational_details_passed"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="20dp">
-
-                <TextView
-                    android:id="@+id/passed_head_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/completed_pursuing"
-                    android:textColor="@color/black"
-                    android:textSize="24sp"
-                    android:textStyle="bold|italic" />
-
-                <TextView
-                    android:id="@+id/passed_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="8dp"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/_2021"
-                    android:textColor="@color/color_primary"
-                    android:textSize="20sp"
-                    android:textStyle="italic" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/educational_details_specialisations"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="20dp">
-
-                <TextView
-                    android:id="@+id/specialisations_head_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/specialisation"
-                    android:textColor="@color/black"
-                    android:textSize="24sp"
-                    android:textStyle="bold|italic" />
-
-                <TextView
-                    android:id="@+id/specialisations_tv"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="8dp"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="@string/computer_science"
-                    android:textColor="@color/color_primary"
-                    android:textSize="20sp"
-                    android:textStyle="italic" />
-
-            </RelativeLayout>
-
         </LinearLayout>
+
 
     </ScrollView>
 
