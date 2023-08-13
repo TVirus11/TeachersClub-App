@@ -8,6 +8,7 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
@@ -22,6 +23,7 @@ public class NotesActivity extends AppCompatActivity {
     ImageView backArrow;
     CardView card5, card6, card7, card8, card9, card10, card11, card12,
             cardComputer, cardJEE, cardProgramming, cardGenScience, cardGenStudies, cardEnglish;
+    TextView toolbarTitle, classTitle, compTitle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,10 @@ public class NotesActivity extends AppCompatActivity {
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayShowTitleEnabled(false);
         }
+
+        toolbarTitle = findViewById(R.id.notesToolbarTitle);
+        classTitle = findViewById(R.id.classNotesTitle);
+        compTitle = findViewById(R.id.competitiveNotesTitle);
 
         backArrow = findViewById(R.id.notesBackArrow);
         backArrow.setOnClickListener(v -> {
@@ -112,10 +118,7 @@ public class NotesActivity extends AppCompatActivity {
         });
 
         //Add
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(@NonNull InitializationStatus initializationStatus) {
-            }
+        MobileAds.initialize(this, initializationStatus -> {
         });
 
         AdView adView = new AdView(this);
