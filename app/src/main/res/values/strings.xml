@@ -128,4 +128,6 @@
     <string name="gen_science">Gen Science</string>
     <string name="gen_studies">Gen Studies</string>
     <string name="english">English</string>
+    <string name="back">Back</string>
+    <string name="profile_pic">Profile Pic</string>
 </resources>

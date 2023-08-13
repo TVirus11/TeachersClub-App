@@ -84,11 +84,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (id == R.id.nav_about) {
 
         } else if (id == R.id.nav_FAQ) {
-            WebView wv = new WebView(this);
-            wv.loadUrl("file:///android_asset/FAQs.html");
-            setContentView(wv);
-            if (wv.canGoBack()) {
-                wv.goBack();
+            WebView wV = new WebView(this);
+            wV.loadUrl("file:///android_asset/FAQs.html");
+            setContentView(wV);
+            if (wV.canGoBack()) {
+                wV.goBack();
             } else {
                 super.onBackPressed();
             }
