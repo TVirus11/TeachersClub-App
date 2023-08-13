@@ -76,11 +76,53 @@
 
         <LinearLayout
             android:id="@+id/profileMainLL"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="260dp"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:id="@+id/basicDetailsLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/profile_title_bg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/basicDetailsHeadTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="@string/basic_details"
+                    android:textColor="@color/color_secondary"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/basicDetailsEditor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="@string/edit_basic_details"
+                    android:src="@drawable/edit"
+                    app:tint="@color/color_secondary" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/BasicDetailsNameTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
 
         </LinearLayout>
 

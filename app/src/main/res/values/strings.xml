@@ -130,4 +130,5 @@
     <string name="english">English</string>
     <string name="back">Back</string>
     <string name="profile_pic">Profile Pic</string>
+    <string name="edit_basic_details">Edit Basic Details</string>
 </resources>
