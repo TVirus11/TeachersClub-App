@@ -131,4 +131,8 @@
     <string name="back">Back</string>
     <string name="profile_pic">Profile Pic</string>
     <string name="edit_basic_details">Edit Basic Details</string>
+    <string name="saved_addresses">Saved Addresses</string>
+    <string name="payment_details">Payment Details</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="favourites">Favourites</string>
 </resources>
