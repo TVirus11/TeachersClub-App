@@ -7,21 +7,30 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.ViewGroup;
 import android.webkit.WebView;
+import android.widget.Button;
+import android.widget.ImageView;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.appcheck.FirebaseAppCheck;
 import com.google.firebase.appcheck.playintegrity.PlayIntegrityAppCheckProviderFactory;
 
+import java.util.Objects;
+
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     public DrawerLayout drawerLayout;
     public ActionBarDrawerToggle actionBarDrawerToggle;
     Toolbar toolbar;
+
+    ImageView comingSoon;
+    Button okayBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +81,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             startActivity(profileIntent);
 
         } else if (id == R.id.nav_find_teacher) {
+            findTeacherDialog();
 
         } else if (id == R.id.nav_courses) {
 
@@ -109,5 +119,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private void setNavigationViewListener() {
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+    }
+
+    public void findTeacherDialog() {
+        Dialog dialog = new Dialog(MainActivity.this);
+        dialog.setContentView(R.layout.find_teacher_dialog);
+        Objects.requireNonNull(dialog.getWindow()).setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        dialog.setCancelable(false);
+        dialog.getWindow().getAttributes().windowAnimations = R.style.animation;
+
+        okayBtn = dialog.findViewById(R.id.okayBtn);
+        okayBtn.setOnClickListener(v -> {
+            dialog.dismiss();
+        });
+        dialog.show();
     }
 }
