@@ -28,15 +28,18 @@
             android:src="@drawable/back"
             app:tint="@color/color_secondary" />
 
-        <ImageView
-            android:id="@+id/profile_pic"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="18dp"
-            android:background="@drawable/profile_image"
-            android:backgroundTint="@color/color_secondary"
-            android:contentDescription="@string/profile_pic" />
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profileImage"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:padding="2dp"
+            android:src="@drawable/placeholder"
+            android:tint="@color/color_secondary"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+            app:strokeColor="@color/color_secondary"
+            app:strokeWidth="3dp" />
 
         <TextView
             android:id="@+id/profile_name"
@@ -80,7 +83,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="260dp"
             android:orientation="vertical">
-
 
 
         </LinearLayout>
