@@ -252,12 +252,25 @@
             <View
                 android:id="@+id/hrSettings"
                 android:layout_width="match_parent"
-                android:layout_height="3dp"
+                android:layout_height="1.5dp"
                 android:layout_marginTop="8dp"
                 android:background="@color/color_primary"
                 android:elevation="5dp" />
 
-
+            <Button
+                android:id="@+id/logoutBtn"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/transparent_button_bg"
+                android:elevation="5dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/logout"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
