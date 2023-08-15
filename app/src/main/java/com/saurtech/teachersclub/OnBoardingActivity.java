@@ -25,11 +25,13 @@ public class OnBoardingActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         preferences = new Preferences(this);
         if (!preferences.isFirstTimeLaunch()) {
             launchRegisterActivity();
             finish();
         }
+
         setContentView(R.layout.activity_onboarding);
 
         container = findViewById(R.id.board);
