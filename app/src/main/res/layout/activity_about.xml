@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/color_secondary"
     tools:context=".AboutActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -25,6 +26,17 @@
             android:contentDescription="@string/chat"
             android:src="@drawable/back"
             app:tint="@color/color_secondary" />
+
+        <TextView
+            android:id="@+id/settingsToolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/about"
+            android:textColor="@color/color_secondary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
     </androidx.appcompat.widget.Toolbar>
 

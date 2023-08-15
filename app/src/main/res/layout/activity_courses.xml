@@ -22,10 +22,23 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:contentDescription="@string/chat"
+            android:contentDescription="@string/back"
             android:src="@drawable/back"
             app:tint="@color/color_secondary" />
 
+        <ImageView
+            android:id="@+id/coursesSearchIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/search_courses"
+            android:src="@drawable/search"
+            app:tint="@color/color_secondary" />
+
     </androidx.appcompat.widget.Toolbar>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
