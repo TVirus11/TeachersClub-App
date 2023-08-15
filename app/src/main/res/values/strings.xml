@@ -56,9 +56,6 @@
     <string name="courses">Courses</string>
     <string name="get_support">Get Support</string>
     <string name="view_more"><![CDATA[View More >>>]]></string>
-    <string name="app_id">ca-app-pub-4040977291751617~4203765742</string>
-    <string name="ad_unit_id">ca-app-pub-4040977291751617/7869448517</string>
-    <string name="ad_unit_id_notes">ca-app-pub-4040977291751617/5552605464</string>
     <string name="saurav_kumar">Saurav Kumar</string>
     <string name="official_skd_11_gmail_com">official.skd.11@gmail.com</string>
     <string name="basic_details">Basic Details</string>
@@ -94,6 +91,7 @@
     <string name="button">Button</string>
     <string name="chat">chat</string>
     <string name="title_activity_settings">SettingsActivity</string>
+    <string name="about_us_section">Welcome to Teachers Club!\n\nAt Teachers Club, we\'re committed to making education accessible and enjoyable for learners of all ages. Our mission is to connect students with experienced and dedicated tutors who are passionate about helping them achieve their learning goals.\n\nWhether you\'re a student seeking academic support, exam preparation, or skill enhancement, Teachers Club has you covered. Our platform brings together a diverse community of qualified tutors who excel in various subjects and fields. We understand that every learner is unique, so we provide a personalized and tailored learning experience to meet your individual needs.\n\nWhy Choose Teachers Club?\n\n - Quality Educators: Our tutors are experts in their respective fields, ensuring that you receive high-quality instruction and guidance.\n\n - Flexible Learning: Learn at your own pace and schedule. Our platform offers flexibility for both students and tutors.\n\n - Comprehensive Subjects: From mathematics to languages, science to arts, we offer a wide range of subjects to cater to all learning interests.\n\n - Interactive Sessions: Engage in interactive sessions that encourage active learning and knowledge retention.\n\n - Seamless Booking: Easily find and book tutors based on your preferences, availability, and learning objectives.\n\n - Feedback and Growth: Our platform encourages open communication between students and tutors, fostering continuous improvement and growth.\n\n\nJoin our community of learners and educators today and embark on a journey of knowledge, exploration, and achievement. Together, we\'re shaping a brighter future through education.\n\nFor any inquiries or assistance, feel free to reach out to our dedicated support team.\n\nThank you for choosing Teachers Club!</string>
 
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
@@ -138,4 +136,12 @@
     <string name="okay">Okay</string>
     <string name="coming_soon_image">Coming Soon Image</string>
     <string name="search_courses">Search Courses</string>
+
+    <!--Google AdMob-->
+    <string name="app_id">ca-app-pub-4040977291751617~4203765742</string>
+    <string name="ad_unit_id">ca-app-pub-4040977291751617/7869448517</string>
+    <string name="ad_unit_id_notes">ca-app-pub-4040977291751617/5552605464</string>
+    <string name="ad_unit_id_about_us">ca-app-pub-4040977291751617/9986512791</string>
+    <!--Google AdMob-->
+
 </resources>

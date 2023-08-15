@@ -14,7 +14,6 @@ import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.Button;
-import android.widget.ImageView;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.FirebaseApp;
@@ -28,8 +27,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public DrawerLayout drawerLayout;
     public ActionBarDrawerToggle actionBarDrawerToggle;
     Toolbar toolbar;
-
-    ImageView comingSoon;
     Button okayBtn;
 
     @Override
@@ -75,6 +72,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
+            Intent homeIntent = new Intent(MainActivity.this, MainActivity.class);
+            startActivity(homeIntent);
 
         } else if (id == R.id.nav_profile) {
             Intent profileIntent = new Intent(MainActivity.this, ProfileActivity.class);
@@ -92,6 +91,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (id == R.id.nav_logout) {
 
         } else if (id == R.id.nav_about) {
+            Intent aboutIntent = new Intent(MainActivity.this, AboutActivity.class);
+            startActivity(aboutIntent);
 
         } else if (id == R.id.nav_FAQ) {
             WebView wV = new WebView(this);
@@ -107,10 +108,26 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             startActivity(supportActivity);
 
         } else if (id == R.id.nav_privacy) {
+            WebView pp = new WebView(this);
+            pp.loadUrl("teachersclub.netlify.app/privacy");
+            setContentView(pp);
+            if (pp.canGoBack()) {
+                pp.goBack();
+            } else {
+                super.onBackPressed();
+            }
 
         } else if (id == R.id.nav_tnc) {
-
+            WebView TnC = new WebView(this);
+            TnC.loadUrl("teachersclub.netlify.app/terms");
+            setContentView(TnC);
+            if (TnC.canGoBack()) {
+                TnC.goBack();
+            } else {
+                super.onBackPressed();
+            }
         }
+
         //close navigation drawer
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
@@ -129,9 +146,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         dialog.getWindow().getAttributes().windowAnimations = R.style.animation;
 
         okayBtn = dialog.findViewById(R.id.okayBtn);
-        okayBtn.setOnClickListener(v -> {
-            dialog.dismiss();
-        });
+        okayBtn.setOnClickListener(v -> dialog.dismiss());
         dialog.show();
     }
 }
