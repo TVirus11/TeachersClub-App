@@ -17,12 +17,19 @@ public class OnBoardingActivity extends AppCompatActivity {
             R.layout.on_boarding_3
     };
 
+    private Preferences preferences;
+
     private ViewGroup container;
     private int currentScreen = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        preferences = new Preferences(this);
+        if (!preferences.isFirstTimeLaunch()) {
+            launchRegisterActivity();
+            finish();
+        }
         setContentView(R.layout.activity_onboarding);
 
         container = findViewById(R.id.board);
@@ -40,13 +47,18 @@ public class OnBoardingActivity extends AppCompatActivity {
         if (currentScreen < onboardingScreens.length) {
             showOnboardingScreen(currentScreen);
         } else {
-
             startActivity(new Intent(OnBoardingActivity.this, RegisterActivity.class));
             finish();
         }
     }
 
     public void onSkipClick(View view) {
+        startActivity(new Intent(OnBoardingActivity.this, RegisterActivity.class));
+        finish();
+    }
+
+    private void launchRegisterActivity() {
+        preferences.setFirstTimeLaunch(false);
         startActivity(new Intent(OnBoardingActivity.this, RegisterActivity.class));
         finish();
     }

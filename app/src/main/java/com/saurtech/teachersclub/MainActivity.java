@@ -74,6 +74,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (id == R.id.nav_home) {
             Intent homeIntent = new Intent(MainActivity.this, MainActivity.class);
             startActivity(homeIntent);
+            finish();
 
         } else if (id == R.id.nav_profile) {
             Intent profileIntent = new Intent(MainActivity.this, ProfileActivity.class);
@@ -142,7 +143,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Dialog dialog = new Dialog(MainActivity.this);
         dialog.setContentView(R.layout.find_teacher_dialog);
         Objects.requireNonNull(dialog.getWindow()).setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        dialog.setCancelable(false);
+        dialog.setCancelable(true);
         dialog.getWindow().getAttributes().windowAnimations = R.style.animation;
 
         okayBtn = dialog.findViewById(R.id.okayBtn);
