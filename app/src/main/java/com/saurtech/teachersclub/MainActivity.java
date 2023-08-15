@@ -84,6 +84,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             findTeacherDialog();
 
         } else if (id == R.id.nav_courses) {
+            Intent courseIntent = new Intent(MainActivity.this, CoursesActivity.class);
+            startActivity(courseIntent);
 
         } else if (id == R.id.nav_notes) {
             Intent notesIntent = new Intent(MainActivity.this, NotesActivity.class);

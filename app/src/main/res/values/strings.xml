@@ -142,6 +142,11 @@
     <string name="ad_unit_id">ca-app-pub-4040977291751617/7869448517</string>
     <string name="ad_unit_id_notes">ca-app-pub-4040977291751617/5552605464</string>
     <string name="ad_unit_id_about_us">ca-app-pub-4040977291751617/9986512791</string>
+    <string name="free_course">Free Course</string>
+    <string name="reading">Reading</string>
+    <string name="videos">Video</string>
+    <string name="audio">Audio</string>
+    <string name="view_all">View All</string>
     <!--Google AdMob-->
 
 </resources>
