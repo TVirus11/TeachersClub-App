@@ -147,6 +147,17 @@
     <string name="videos">Video</string>
     <string name="audio">Audio</string>
     <string name="view_all">View All</string>
+    <string name="plangaugeimage">PLangaugeImage</string>
+    <string name="c_language">C Language</string>
+    <string name="c_plus_language">C ++ Language</string>
+    <string name="python">Python</string>
+    <string name="html">HTML</string>
+    <string name="read_the_best_material_on_c_programming_language">Read the best material on C Programming language.</string>
+    <string name="arrow">Arrow</string>
+    <string name="want_to_know_about_c">Want to know about C++.</string>
+    <string name="learn_one_of_the_most_interesting_programming_language">Learn one of the most interesting Programming Language</string>
+    <string name="get_into_the_world_of_web_development">Get into the world of Web Development.</string>
+    <string name="general_science">General Science</string>
     <!--Google AdMob-->
 
 </resources>
