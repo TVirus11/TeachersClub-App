@@ -158,6 +158,11 @@
     <string name="learn_one_of_the_most_interesting_programming_language">Learn one of the most interesting Programming Language</string>
     <string name="get_into_the_world_of_web_development">Get into the world of Web Development.</string>
     <string name="general_science">General Science</string>
+    <string name="physics">Physics</string>
+    <string name="chemistry">Chemistry</string>
+    <string name="novel">Novel</string>
+    <string name="atomic_habits">Atomic Habits</string>
+    <string name="psychology_of_money">Psychology of Money</string>
     <!--Google AdMob-->
 
 </resources>
