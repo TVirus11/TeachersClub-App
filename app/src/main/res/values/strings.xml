@@ -165,6 +165,9 @@
     <string name="novel">Novel</string>
     <string name="atomic_habits">Atomic Habits</string>
     <string name="psychology_of_money">Psychology of Money</string>
+    <string name="image_placeholder">Image Placeholder</string>
+    <string name="teacher_1">Teacher 1</string>
+    <string name="search_here">Search Here</string>
 
 
 </resources>
