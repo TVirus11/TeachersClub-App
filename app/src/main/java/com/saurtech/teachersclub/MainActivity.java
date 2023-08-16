@@ -78,6 +78,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (id == R.id.nav_profile) {
             Intent profileIntent = new Intent(MainActivity.this, ProfileActivity.class);
             startActivity(profileIntent);
+            finish();
 
         } else if (id == R.id.nav_find_teacher) {
             findTeacherDialog();
@@ -85,10 +86,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (id == R.id.nav_courses) {
             Intent courseIntent = new Intent(MainActivity.this, CoursesActivity.class);
             startActivity(courseIntent);
+            finish();
 
         } else if (id == R.id.nav_notes) {
             Intent notesIntent = new Intent(MainActivity.this, NotesActivity.class);
             startActivity(notesIntent);
+            finish();
 
         } else if (id == R.id.nav_logout) {
             //TODO
@@ -96,6 +99,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (id == R.id.nav_about) {
             Intent aboutIntent = new Intent(MainActivity.this, AboutActivity.class);
             startActivity(aboutIntent);
+            finish();
 
         } else if (id == R.id.nav_FAQ) {
             WebView wV = new WebView(this);
@@ -109,6 +113,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (id == R.id.nav_support) {
             Intent supportActivity = new Intent(MainActivity.this, GetSupportActivity.class);
             startActivity(supportActivity);
+            finish();
 
         } else if (id == R.id.nav_privacy) {
             WebView pp = new WebView(this);

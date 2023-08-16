@@ -139,9 +139,11 @@
 
     <!--Google AdMob-->
     <string name="app_id">ca-app-pub-4040977291751617~4203765742</string>
-    <string name="ad_unit_id">ca-app-pub-4040977291751617/7869448517</string>
     <string name="ad_unit_id_notes">ca-app-pub-4040977291751617/5552605464</string>
     <string name="ad_unit_id_about_us">ca-app-pub-4040977291751617/9986512791</string>
+    <string name="ad_unit_id_courses">ca-app-pub-4040977291751617/2177758237</string>
+    <!--Google AdMob-->
+
     <string name="free_course">Free Course</string>
     <string name="reading">Reading</string>
     <string name="videos">Video</string>
@@ -163,6 +165,6 @@
     <string name="novel">Novel</string>
     <string name="atomic_habits">Atomic Habits</string>
     <string name="psychology_of_money">Psychology of Money</string>
-    <!--Google AdMob-->
+
 
 </resources>
