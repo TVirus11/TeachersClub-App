@@ -65,7 +65,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         return super.onOptionsItemSelected(item);
     }
 
-    @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         // Handle navigation view item clicks here.
@@ -92,6 +91,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             startActivity(notesIntent);
 
         } else if (id == R.id.nav_logout) {
+            //TODO
 
         } else if (id == R.id.nav_about) {
             Intent aboutIntent = new Intent(MainActivity.this, AboutActivity.class);
