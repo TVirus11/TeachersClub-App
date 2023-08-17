@@ -149,7 +149,7 @@
     <string name="videos">Video</string>
     <string name="audio">Audio</string>
     <string name="view_all">View All</string>
-    <string name="plangaugeimage">PLangaugeImage</string>
+    <string name="planguageimage">PLanguageImage</string>
     <string name="c_language">C Language</string>
     <string name="c_plus_language">C ++ Language</string>
     <string name="python">Python</string>

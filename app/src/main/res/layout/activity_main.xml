@@ -218,9 +218,9 @@
                 </HorizontalScrollView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/card_view"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/card_view1"
+                    android:layout_width="400dp"
+                    android:layout_height="220dp"
                     android:layout_margin="10dp"
                     android:backgroundTint="@color/color_primary"
                     app:cardCornerRadius="20dp"
@@ -230,7 +230,7 @@
                     app:cardUseCompatPadding="true">
 
                     <ImageView
-                        android:id="@+id/img"
+                        android:id="@+id/img1"
                         android:layout_width="160dp"
                         android:layout_height="160dp"
                         android:layout_gravity="center"
@@ -268,16 +268,6 @@
         app:itemTextAppearance="@style/MenuItems"
         app:itemTextColor="@color/color_secondary"
         app:menu="@menu/nav_menu">
-
-        <TextView
-            android:id="@+id/nav_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center_horizontal"
-            android:text="@string/version_1_0"
-            android:textColor="@color/color_secondary"
-            android:textSize="18sp"
-            android:textStyle="bold|italic" />
 
     </com.google.android.material.navigation.NavigationView>
 
