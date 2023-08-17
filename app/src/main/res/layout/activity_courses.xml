@@ -267,7 +267,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:contentDescription="@string/plangaugeimage"
+                        android:contentDescription="@string/planguageimage"
                         android:src="@drawable/c_plus" />
 
                     <TextView
@@ -325,7 +325,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:contentDescription="@string/plangaugeimage"
+                        android:contentDescription="@string/planguageimage"
                         android:src="@drawable/python" />
 
                     <TextView
@@ -377,7 +377,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:contentDescription="@string/plangaugeimage"
+                        android:contentDescription="@string/planguageimage"
                         android:src="@drawable/html" />
 
                     <TextView
@@ -467,7 +467,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:contentDescription="@string/plangaugeimage"
+                        android:contentDescription="@string/planguageimage"
                         android:src="@drawable/c" />
 
                     <TextView
@@ -519,7 +519,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:contentDescription="@string/plangaugeimage"
+                        android:contentDescription="@string/planguageimage"
                         android:src="@drawable/c_plus" />
 
                     <TextView
@@ -610,7 +610,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:contentDescription="@string/plangaugeimage"
+                        android:contentDescription="@string/planguageimage"
                         android:src="@drawable/c" />
 
                     <TextView
@@ -662,7 +662,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:contentDescription="@string/plangaugeimage"
+                        android:contentDescription="@string/planguageimage"
                         android:src="@drawable/c_plus" />
 
                     <TextView
