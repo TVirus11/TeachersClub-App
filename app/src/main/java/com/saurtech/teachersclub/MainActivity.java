@@ -14,6 +14,8 @@ import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.Button;
+import android.widget.RatingBar;
+import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.FirebaseApp;
@@ -27,7 +29,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public DrawerLayout drawerLayout;
     public ActionBarDrawerToggle actionBarDrawerToggle;
     Toolbar toolbar;
-    Button okayBtn;
+    Button okayBtn, submitBtn;
+    RatingBar ratingsBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -134,6 +137,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             } else {
                 super.onBackPressed();
             }
+        } else if (id == R.id.nav_rate) {
+            ratingsDialog();
         }
 
         //close navigation drawer
@@ -155,6 +160,24 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         okayBtn = dialog.findViewById(R.id.okayBtn);
         okayBtn.setOnClickListener(v -> dialog.dismiss());
+        dialog.show();
+    }
+
+    public void ratingsDialog() {
+        Dialog dialog = new Dialog(MainActivity.this);
+
+        ratingsBar = (RatingBar) dialog.findViewById(R.id.ratingBar);
+        dialog.setContentView(R.layout.rate_me);
+
+        Objects.requireNonNull(dialog.getWindow()).setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        dialog.setCancelable(true);
+        dialog.getWindow().getAttributes().windowAnimations = R.style.animation;
+
+        submitBtn = dialog.findViewById(R.id.submitButton);
+        submitBtn.setOnClickListener(v -> {
+            Toast.makeText(this, "Ratings Submitted", Toast.LENGTH_SHORT).show();
+            dialog.dismiss();
+        });
         dialog.show();
     }
 }

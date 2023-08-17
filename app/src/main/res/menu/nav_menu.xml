@@ -70,6 +70,11 @@
             android:icon="@drawable/tnc"
             android:title="@string/terms_conditions" />
 
+        <item
+            android:id="@+id/nav_rate"
+            android:icon="@drawable/rating"
+            android:title="@string/rate_us" />
+
     </group>
 
 </menu>

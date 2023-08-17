@@ -170,6 +170,9 @@
     <string name="search_here">Search Here</string>
     <string name="notification">Notification</string>
     <string name="available_teachers">Available Teachers</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="submit">Submit</string>
+    <string name="rate_the_app">Rate the App</string>
 
 
 </resources>
