@@ -38,6 +38,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     EditText search;
     TextView aTViewAll, cViewAll, nViewAll;
 
+    WebView activeWebView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -144,14 +146,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             finish();
 
         } else if (id == R.id.nav_FAQ) {
-            WebView wV = new WebView(this);
+            setContentView(R.layout.faq_webview);
+            WebView wV = findViewById(R.id.faq);
             wV.loadUrl("file:///android_asset/FAQs.html");
-            setContentView(wV);
-            if (wV.canGoBack()) {
-                wV.goBack();
-            } else {
-                super.onBackPressed();
-            }
+            activeWebView = wV;
+
         } else if (id == R.id.nav_support) {
             Intent supportActivity = new Intent(MainActivity.this, GetSupportActivity.class);
             startActivity(supportActivity);
@@ -183,6 +182,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         //close navigation drawer
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (activeWebView != null && activeWebView.canGoBack()) {
+            activeWebView.goBack();
+        } else {
+            super.onBackPressed();
+        }
     }
 
     private void setNavigationViewListener() {
