@@ -37,9 +37,9 @@
     </group>
 
     <item
-        android:id="@+id/nav_logout"
-        android:icon="@drawable/logout"
-        android:title="@string/logout" />
+        android:id="@+id/nav_community"
+        android:icon="@drawable/community"
+        android:title="@string/classroom_caf" />
 
     <group
         android:id="@+id/group_terms"
@@ -76,5 +76,10 @@
             android:title="@string/rate_us" />
 
     </group>
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/logout"
+        android:title="@string/logout" />
 
 </menu>

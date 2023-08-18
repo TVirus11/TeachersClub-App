@@ -143,6 +143,7 @@
     <string name="ad_unit_id_about_us">ca-app-pub-4040977291751617/9986512791</string>
     <string name="ad_unit_id_courses">ca-app-pub-4040977291751617/2177758237</string>
     <string name="ad_unit_id_notification">ca-app-pub-4040977291751617/4106304614</string>
+    <string name="ad_unit_id_profile">ca-app-pub-4040977291751617/9990591657</string>
     <!--Google AdMob-->
 
     <string name="free_course">Free Course</string>
@@ -174,6 +175,7 @@
     <string name="rate_us">Rate Us</string>
     <string name="submit">Submit</string>
     <string name="rate_the_app">Rate the App</string>
-
+    <string name="community">Community</string>
+    <string name="classroom_caf">Classroom Café</string>
 
 </resources>
