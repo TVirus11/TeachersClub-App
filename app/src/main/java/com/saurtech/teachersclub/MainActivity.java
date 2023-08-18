@@ -14,7 +14,10 @@ import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RatingBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
@@ -31,11 +34,24 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     Toolbar toolbar;
     Button okayBtn, submitBtn;
     RatingBar ratingsBar;
+    ImageView settingsMain, notiMain;
+    EditText search;
+
+    TextView aTViewAll, cViewAll, nViewAll;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        settingsMain = findViewById(R.id.settingsMain);
+        notiMain = findViewById(R.id.notificationMain);
+
+        search = findViewById(R.id.searchMain);
+
+        aTViewAll = findViewById(R.id.availableTeachersViewAll);
+        cViewAll = findViewById(R.id.courseViewAllTV);
+        nViewAll = findViewById(R.id.notesViewAllTV);
 
         //App Check
         FirebaseApp.initializeApp(this);
