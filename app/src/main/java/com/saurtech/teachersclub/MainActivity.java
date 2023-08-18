@@ -171,6 +171,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             }
         } else if (id == R.id.nav_rate) {
             ratingsDialog();
+        } else if (id == R.id.nav_community) {
+            Intent communityIntent = new Intent(MainActivity.this, CommunityActivity.class);
+            startActivity(communityIntent);
         }
 
         //close navigation drawer
