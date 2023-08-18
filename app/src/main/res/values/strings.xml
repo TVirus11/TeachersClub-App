@@ -142,6 +142,7 @@
     <string name="ad_unit_id_notes">ca-app-pub-4040977291751617/5552605464</string>
     <string name="ad_unit_id_about_us">ca-app-pub-4040977291751617/9986512791</string>
     <string name="ad_unit_id_courses">ca-app-pub-4040977291751617/2177758237</string>
+    <string name="ad_unit_id_notification">ca-app-pub-4040977291751617/4106304614</string>
     <!--Google AdMob-->
 
     <string name="free_course">Free Course</string>

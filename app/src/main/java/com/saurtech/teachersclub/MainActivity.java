@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     RatingBar ratingsBar;
     ImageView settingsMain, notiMain;
     EditText search;
-
     TextView aTViewAll, cViewAll, nViewAll;
 
     @Override
@@ -45,13 +44,37 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_main);
 
         settingsMain = findViewById(R.id.settingsMain);
+        settingsMain.setOnClickListener(v -> {
+            Intent settingsIntent = new Intent(MainActivity.this, SettingsActivity.class);
+            startActivity(settingsIntent);
+            finish();
+        });
+
         notiMain = findViewById(R.id.notificationMain);
+        notiMain.setOnClickListener(v -> {
+            Intent notiIntent = new Intent(MainActivity.this, NotificationActivity.class);
+            startActivity(notiIntent);
+            finish();
+        });
 
         search = findViewById(R.id.searchMain);
 
         aTViewAll = findViewById(R.id.availableTeachersViewAll);
+
+
         cViewAll = findViewById(R.id.courseViewAllTV);
+        cViewAll.setOnClickListener(v -> {
+            Intent mainCoursesIntent = new Intent(MainActivity.this, CoursesActivity.class);
+            startActivity(mainCoursesIntent);
+            finish();
+        });
+
         nViewAll = findViewById(R.id.notesViewAllTV);
+        nViewAll.setOnClickListener(v -> {
+            Intent mainNotesIntent = new Intent(MainActivity.this, NotesActivity.class);
+            startActivity(mainNotesIntent);
+            finish();
+        });
 
         //App Check
         FirebaseApp.initializeApp(this);
