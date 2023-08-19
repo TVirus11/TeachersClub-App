@@ -262,8 +262,8 @@
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/communityCV"
-                    android:layout_width="400dp"
-                    android:layout_height="220dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
                     android:layout_margin="10dp"
                     android:backgroundTint="@color/color_primary"
                     app:cardCornerRadius="20dp"
