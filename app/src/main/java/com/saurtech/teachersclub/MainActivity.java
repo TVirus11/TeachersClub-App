@@ -45,6 +45,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //App Check
+        FirebaseApp.initializeApp(this);
+        FirebaseAppCheck firebaseAppCheck = FirebaseAppCheck.getInstance();
+        firebaseAppCheck.installAppCheckProviderFactory(
+                PlayIntegrityAppCheckProviderFactory.getInstance());
+        //App Check
+
         settingsMain = findViewById(R.id.settingsMain);
         settingsMain.setOnClickListener(v -> {
             Intent settingsIntent = new Intent(MainActivity.this, SettingsActivity.class);
@@ -77,13 +84,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             startActivity(mainNotesIntent);
             finish();
         });
-
-        //App Check
-        FirebaseApp.initializeApp(this);
-        FirebaseAppCheck firebaseAppCheck = FirebaseAppCheck.getInstance();
-        firebaseAppCheck.installAppCheckProviderFactory(
-                PlayIntegrityAppCheckProviderFactory.getInstance());
-        //App Check
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
