@@ -261,7 +261,7 @@
                 </HorizontalScrollView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/card_view1"
+                    android:id="@+id/communityCV"
                     android:layout_width="400dp"
                     android:layout_height="220dp"
                     android:layout_margin="10dp"
@@ -274,11 +274,22 @@
 
                     <ImageView
                         android:id="@+id/find_teach"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|center"
                         android:contentDescription="@string/app_name"
                         android:src="@drawable/teach" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_margin="4dp"
+                        android:gravity="center"
+                        android:text="@string/one_of_the_best_community_for_students_and_teachers_to_get_along"
+                        android:textColor="@color/color_secondary"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
                 </androidx.cardview.widget.CardView>
 

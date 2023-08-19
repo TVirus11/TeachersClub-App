@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -37,8 +38,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     ImageView settingsMain, notiMain;
     EditText search;
     TextView aTViewAll, cViewAll, nViewAll;
-
     WebView activeWebView;
+    CardView mCommunityView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +64,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         notiMain.setOnClickListener(v -> {
             Intent notiIntent = new Intent(MainActivity.this, NotificationActivity.class);
             startActivity(notiIntent);
+            finish();
+        });
+
+        mCommunityView = findViewById(R.id.communityCV);
+        mCommunityView.setOnClickListener(v -> {
+            Intent communityIntent = new Intent(MainActivity.this, CommunityActivity.class);
+            startActivity(communityIntent);
             finish();
         });
 
