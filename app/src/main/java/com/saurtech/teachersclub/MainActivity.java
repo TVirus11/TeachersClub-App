@@ -210,7 +210,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void ratingsDialog() {
         Dialog dialog = new Dialog(MainActivity.this);
 
-        ratingsBar = (RatingBar) dialog.findViewById(R.id.ratingBar);
+        ratingsBar = dialog.findViewById(R.id.ratingBar);
         dialog.setContentView(R.layout.rate_me);
 
         Objects.requireNonNull(dialog.getWindow()).setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);

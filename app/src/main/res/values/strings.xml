@@ -183,5 +183,14 @@
     <string name="group">Group</string>
     <string name="my_questions">My Questions</string>
     <string name="manage">Manage</string>
+    <string name="post_content">Post Content</string>
+    <string name="post_questions">Post Questions</string>
+    <string name="unselected_dot">Unselected Dot</string>
+    <string name="selected_dot">Selected Dot</string>
+    <string name="dot">Dot</string>
+    <string name="teacher">Teacher</string>
+    <string name="next">Next</string>
+    <string name="education_tree">Education Tree</string>
+    <string name="online_education">Online Education</string>
 
 </resources>
