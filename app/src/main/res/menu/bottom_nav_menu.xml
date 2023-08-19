@@ -7,22 +7,23 @@
         android:title="@string/profile" />
 
     <item
-        android:id="@+id/nav_find_teacher"
-        android:icon="@drawable/find"
-        android:title="@string/find_teacher" />
+        android:id="@+id/bot_nav_group"
+        android:icon="@drawable/group"
+        android:title="@string/group" />
+
     <item
         android:id="@+id/bot_nav_home"
         android:icon="@drawable/home"
         android:title="@string/home" />
 
     <item
-        android:id="@+id/nav_courses"
-        android:icon="@drawable/courses"
-        android:title="@string/courses" />
+        android:id="@+id/bot_nav_my_questions"
+        android:icon="@drawable/question_answer"
+        android:title="@string/my_questions" />
 
     <item
-        android:id="@+id/nav_notes"
-        android:icon="@drawable/notes"
-        android:title="@string/notes" />
+        android:id="@+id/bot_nav_manage"
+        android:icon="@drawable/manage"
+        android:title="@string/manage" />
 
 </menu>
