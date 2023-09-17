@@ -308,13 +308,13 @@
                 </androidx.cardview.widget.CardView>
 
                 <View
-                    android:id="@+id/hrNotes"
+                    android:id="@+id/hrMain1"
                     android:layout_width="match_parent"
                     android:layout_height="3dp"
                     android:layout_below="@id/cardView8"
                     android:layout_marginTop="4dp"
                     android:layout_marginBottom="4dp"
-                    android:background="@color/color_primary"
+                    android:background="@color/color_tertiary"
                     android:elevation="5dp" />
             </RelativeLayout>
 
@@ -512,13 +512,13 @@
                 </androidx.cardview.widget.CardView>
 
                 <View
-                    android:id="@+id/hrNotesC"
+                    android:id="@+id/hrMain2"
                     android:layout_width="match_parent"
                     android:layout_height="3dp"
                     android:layout_below="@id/cardView14"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginBottom="46dp"
-                    android:background="@color/color_primary"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="48dp"
+                    android:background="@color/color_tertiary"
                     android:elevation="5dp" />
             </RelativeLayout>
 

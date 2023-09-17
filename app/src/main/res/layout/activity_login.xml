@@ -113,10 +113,10 @@
 
     <androidx.appcompat.widget.AppCompatCheckBox
         android:id="@+id/consent_check"
+        style="@style/MyCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:theme="@style/MyCheckBox"
         app:layout_constraintStart_toStartOf="@id/pass_et_login"
         app:layout_constraintTop_toBottomOf="@id/pass_et_login" />
 
@@ -134,7 +134,7 @@
 
     <Button
         android:id="@+id/login_btn"
-        android:layout_width="match_parent"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
@@ -154,8 +154,8 @@
     <TextView
         android:id="@+id/new_user"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:onClick="onClick"
         android:text="@string/new_here_register_yourself"

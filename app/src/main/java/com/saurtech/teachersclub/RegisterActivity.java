@@ -30,7 +30,6 @@ public class RegisterActivity extends AppCompatActivity {
     Button regButton;
     EditText fullNameET, emailET, createPassET, confirmPassET;
     AppCompatCheckBox consentCheck;
-
     FirebaseFirestore firebaseFirestore;
     DocumentReference documentReference;
 
